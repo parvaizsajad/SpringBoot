@@ -1,0 +1,1 @@
+This projet contains the crud operations using the jps data base.
