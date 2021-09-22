@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Conditional</title>
+</head>
+<body>
+	<h1>This is a conditional web page</h1>
+	<h1 th:style="${isActive} ? 'color:green' : 'color:red'" th:text="${isActive} ? 'Active' : 'not Active'"></h1>
+
+
+	<h1 th:if="${Gender}=='M'">MALE</h1>
+	<h1 th:unless="${Gender}=='M'">FEMALE</h1>
+	
+	<!-- code fot the switch in thymleaf -->
+	<div th:switch="${#lists.size(numli)}">
+	<h1 th:case="'0'">List contains zero elements</h1>
+	<h1 th:case="'1'">List contains one elements</h1>
+	<h1 th:case="*">List contains more than one elements</h1>
+	
+	</div>
+	<h1 ></h1>
+</body>
+</html>

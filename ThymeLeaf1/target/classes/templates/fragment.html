@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Fragment handler</title>
+</head>
+<body>
+	<h1>This is the body of fragment handler</h1>
+	<!-- here we are going to include the footer -->
+	<!-- <footer th:replace="footer::footer1('This is title','This is subtitle')"> from the fragment to footer --> 
+	
+	<!-- here values are comming from controller -->
+	<footer th:replace="footer::footer1('This is title','This is subtitle')">
+	
+	</footer>
+</body>
+</html>

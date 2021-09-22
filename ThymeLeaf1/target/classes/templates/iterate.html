@@ -1,0 +1,21 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>iterate over the collection using the thymeleaf</title>
+</head>
+<body>
+<h1> this is the thymeleaf iteration over the collection</h1>
+<h1 th:text="${nameList}"></h1>
+<ul>
+<li th:each=" na,status : ${nameList}">
+<span th:text="${status.index}+' '+${na}"></span>
+<!-- the other methods in the status are 
+index,count,size,even/odd,first,last-->
+<span th:style="${status.odd} ? 'font-weight:bold' : 'color:red'" th:text="${status.count}+' '+${status.size}+' '+${status.first}+' '+${status.last}+' '+${status.even}+' '+${status.odd}"></span>
+<span ></span>
+
+</ul>
+</body>
+</html>
