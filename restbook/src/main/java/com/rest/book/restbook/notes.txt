@@ -1,0 +1,3 @@
+jakson bidirectional relationships.
+1 jsonManageReferences
+2 jsonBackReferences
